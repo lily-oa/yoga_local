@@ -1,2 +1,2 @@
 # LV-8: yoga_local
-pages: 
+pages: https://lily-oa.github.io/yoga_local/
