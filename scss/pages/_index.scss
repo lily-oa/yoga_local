@@ -1,0 +1,76 @@
+/*banner_index*/
+.banner_index {
+  background-image: url('../img/index3.jpg');
+  min-height: calc(100vh - 80px); //減掉 navbar的高度
+  background-attachment: fixed; //固定背景圖不要滾動
+}
+
+/*滾動icon*/
+.run_icon {
+  z-index: 1200;
+}
+
+/*感受身心，活在當下*/
+.img-md{
+  min-height: 420px;
+  @include media-breakpoint-up(md) {
+    min-height: 252px;
+  }
+  @include media-breakpoint-up(lg) {
+    min-height: 420px;
+  }
+}
+
+/*頂尖師資、專業教學*/
+.lyingDown_pic{
+  background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/yoga-week8/photo-1540206276207-3af25c08abc4.jpeg?raw=true');
+  height: 628px;
+}
+
+.head_pic{
+  width: 48px;
+  height: 48px;
+  @include media-breakpoint-up(md) {
+    width: 94px;
+    height: 94px;
+  }
+}
+.head_pic_2{
+  width: 48px;
+  height: 48px;
+  @include media-breakpoint-up(md) {
+    width: 68px;
+    height: 68px;
+  }
+}
+//負值
+.ms-lg-n2{
+  margin-left: 0% !important;
+  @include media-breakpoint-up(lg){
+    margin-left: -16% !important;
+  }
+}
+
+.teacher{
+  @include media-breakpoint-down(md){
+    &-founder{
+        margin-left: 0px;
+    }
+  }
+}
+
+/* footer 現在訂閱，獲得課程優惠碼！*/
+.interButton{
+  width: 100%;
+  @include media-breakpoint-up(md) {
+    width: 80%;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 100%;
+  }
+}
+
+.fIcon{
+  width: 24px;
+  height: 24px;
+}

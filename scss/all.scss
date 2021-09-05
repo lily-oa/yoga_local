@@ -1,0 +1,17 @@
+/*-- 引入bootstrap --*/
+@import "bootstrap/scss/functions";
+@import "helpers/variables";
+@import "helpers/utilities";
+@import "helpers/bsutilities";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/bootstrap";
+/*-- setting --*/
+@import "setting/base";
+@import "setting/until";
+@import "setting/hover";
+/*-- components --*/
+@import "components/swiper";
+@import "components/scrollbar";
+@import "components/table";
+/*-- pages --*/
+@import "pages/index";
