@@ -45,8 +45,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-  <!--another swiper css-->
+  <!--swiper @7 css-->
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!--日期外掛-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
   <!-- jquery -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -128,14 +129,13 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-md-6 col-lg-5">
-          <ul class="text-dark_2">
-            <li class="mb-3">
-              <p class="text-danger fw-bolder">* 為必填 </p>
-            </li>
-            <li class="mb-5 mb-lg-4 d-flex">
+          <form class="text-dark_2">
+            <fieldset class="mb-3">
+              <p class="mb-3 text-danger fw-bolder">* 為必填 </p>
+            <label class="mb-5 mb-lg-4 d-flex">
               <p class="me-1">1. 是否接觸過瑜珈? </p><span class="text-danger fw-bolder">*</span>
-            </li>
-            <li class="d-flex mb-8">
+            </label>
+            <div class="d-flex mb-8">
               <div class="form-check me-8">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioYes" checked>
                 <label class="form-check-label" for="flexRadioYes">
@@ -148,11 +148,13 @@
                   否
                 </label>
               </div>
-            </li>
-            <li class="mb-5 mb-lg-4 d-flex">
-              <p class="me-1">2. 想改善的生活問題? </p><span class="text-danger fw-bolder">*</span>
-            </li>
-            <li class="mb-8 overflow-auto">
+            </div>
+            </fieldset>
+            <fieldset >
+              <div class="mb-5 mb-lg-4">
+              <labe class="me-1">2. 想改善的生活問題? <span class="text-danger fw-bolder">*</span></labe>
+              </div>
+            <div class="mb-8">
               <!--第一排-->
               <ul class="row d-flex flex-nowrap mb-4 gx-0">
                 <li class="col-4 form-check form-check-inline">
@@ -169,7 +171,7 @@
                 </li>
               </ul>
               <!--第二排-->
-              <ul class="row d-flex flex-nowrap g-0">
+              <ul class="row d-flex flex-nowrap g-0 overflow-auto">
                 <li class="col-4 form-check form-check-inline">
                   <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
                   <label class="form-check-label" for="inlineCheckbox4">姿勢不正</label>
@@ -183,9 +185,10 @@
                   <label class="form-check-label" for="inlineCheckbox6">注意力不足</label>
                 </li>
               </ul>
-            </li>
-            <li class="mb-8">
-              <p class="mb-4">3. 每週累積運動量約為多少？ <span class="text-danger fw-bolder">*</span></p>
+            </div>
+            </fieldset>
+            <fieldset class="mb-8">
+              <label class="form-label mb-4">3. 每週累積運動量約為多少？ <span class="text-danger fw-bolder">*</span></label>
               <ul class="row">
                 <li class="col-6">
                   <!--左半邊-->
@@ -218,12 +221,18 @@
                   </div>
                 </li>
               </ul>
-            </li>
-            <li class="mb-8">
-              <p class="mb-1">4. 上課預約報到日 <span class="text-danger fw-bolder">*</span></p>
+            </fieldset>
+            <fieldset class="mb-8">
+              <label class="form-label mb-1" for="datepicker">4. 上課預約報到日 <span class="text-danger fw-bolder">*</span></label>
               <p class="mb-2">若還沒有確定的日期，可以等待專員與您聯絡時在做詳細的諮詢哦！</p>
-            </li>
-          </ul>
+              <div class="row">
+                <div class="col-auto">
+                  <input type="text" placeholder="MM/DD/YYYY" name="datepicker" class="form-control">
+                </div>
+              </div>
+            </fieldset>
+            
+          </form>
         </div>
       </div>
     </section>
@@ -294,10 +303,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
   </script>
+  <!--日期外掛-->
   <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
   <!-- jquery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!--another swiper js-->
+  <!--swiper @7 js-->
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="js/all.js"></script>
 </body>

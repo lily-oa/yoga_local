@@ -21840,6 +21840,31 @@ img {
   min-width: 1000px !important;
 }
 
+.primary {
+  color: #907A7B;
+}
+
+.datepicker-cell.selected, .datepicker-cell.selected:hover {
+  background-color: #907A7B;
+}
+
+.form-control {
+  color: #907A7B;
+  border: 1px solid #907A7B;
+}
+
+.dow, .day {
+  color: #C0A4A5;
+}
+
+.next, .pre {
+  color: #907A7B !important;
+}
+
+.datepicker-picker {
+  border: 1px solid #907A7B !important;
+}
+
 /*-- pages --*/
 /*banner_index*/
 .banner_index {

@@ -162,13 +162,10 @@ if(bookingOptionSwiper){
 }
 
 //日期
-const dateDom = document.querySelector('.js-datepicker-date');
-if (dateDom) {
-  const datepicker = new Datepicker(dateDom, {
-    autohide: true,
-    daysOfWeekDisabled: [0],
-    nextArrow: '>',
-    prevArrow: '<',
-    buttonClass: 'btn btn-outline-primary border-0 fw-normal',
-  });
-}
+const elem = document.querySelector('input[name="datepicker"]');
+const datepicker = new Datepicker(elem, {
+  nextArrow: '>',
+  prevArrow: '<',
+  clearBtn: true,  /*清除按鈕*/
+  buttonClass: 'btn text-primary',
+}); 
