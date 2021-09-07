@@ -1219,11 +1219,11 @@ $accordion-body-padding-x:                $accordion-padding-x !default;
 
 $accordion-button-padding-y:              $accordion-padding-y !default;
 $accordion-button-padding-x:              $accordion-padding-x !default;
-$accordion-button-color:                  $accordion-color !default;
-$accordion-button-bg:                     $accordion-bg !default;
+$accordion-button-color:                  $light !default;          //$accordion-color *修改手風琴icon顏色的地方*
+$accordion-button-bg:                     $light_2 !default;        //$accordion-bg *修改手風琴icon顏色的地方*
 $accordion-transition:                    $btn-transition, border-radius .15s ease !default;
-$accordion-button-active-bg:              tint-color($component-active-bg, 90%) !default;
-$accordion-button-active-color:           shade-color($primary, 10%) !default;
+$accordion-button-active-bg:              $primary !default;        //tint-color($component-active-bg, 90%) *修改手風琴icon顏色的地方*
+$accordion-button-active-color:           $light !default;          //shade-color($primary, 10%)   *修改手風琴icon顏色的地方*
 
 $accordion-button-focus-border-color:     $input-focus-border-color !default;
 $accordion-button-focus-box-shadow:       $btn-focus-box-shadow !default;
