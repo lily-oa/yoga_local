@@ -10894,6 +10894,22 @@ textarea.form-control-lg {
   font-size: calc(1.425rem + 2.1vw) !important;
 }
 
+.text-shadow {
+  text-shadow: 0 0 5px #000000 !important;
+}
+
+.text-shadow-sm {
+  text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.text-shadow-lg {
+  text-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.text-shadow-none {
+  text-shadow: none !important;
+}
+
 @media (min-width: 576px) {
   .float-sm-start {
     float: left !important;

@@ -50,6 +50,16 @@ $utilities: map-merge(
           responsive: true,
         )
       ),
+      "text-shadow":(
+        property: text-shadow,
+        class: text-shadow,
+        values: (
+          null: 0 0 5px #000000,
+          sm: $box-shadow-sm,
+          lg: $box-shadow-lg,
+          none: none,
+        )
+      ),
       "width":
       map-merge(
         map-get($utilities, "width"),
