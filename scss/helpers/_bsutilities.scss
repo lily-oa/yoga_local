@@ -60,6 +60,13 @@ $utilities: map-merge(
           none: none,
         )
       ),
+      "opacity":(
+        property: opacity,
+        class: opacity,
+        values: (
+          0\.3: .3,
+        )
+      ),
       "width":
       map-merge(
         map-get($utilities, "width"),

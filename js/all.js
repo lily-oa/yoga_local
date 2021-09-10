@@ -161,6 +161,38 @@ if(bookingOptionSwiper){
   });
 }
 
+// reservation-choose.html 下方swiper
+const schemeSwiper = document.querySelector('.js-swiper-scheme');
+if (schemeSwiper) {
+  const swiper1 = new Swiper('.js-swiper-scheme', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    grid: {
+      rows: 3,
+    },
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        grid: {
+          rows: 1,
+        },
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        grid: {
+          rows: 1,
+        },
+      },
+    },
+  });
+}
+
 //日期
 const elem = document.querySelector('input[name="datepicker"]');
 const datepicker = new Datepicker(elem, {

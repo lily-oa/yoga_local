@@ -10910,6 +10910,10 @@ textarea.form-control-lg {
   text-shadow: none !important;
 }
 
+.opacity-0\.3 {
+  opacity: 0.3 !important;
+}
+
 @media (min-width: 576px) {
   .float-sm-start {
     float: left !important;
@@ -21726,6 +21730,10 @@ img {
 
 .specilColor {
   color: #e6e6e6 !important;
+}
+
+.border-transparent {
+  border-color: transparent !important;
 }
 
 .font_carlmarx {
