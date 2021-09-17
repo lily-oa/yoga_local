@@ -195,9 +195,12 @@ if (schemeSwiper) {
 
 //日期
 const elem = document.querySelector('input[name="datepicker"]');
-const datepicker = new Datepicker(elem, {
-  nextArrow: '>',
-  prevArrow: '<',
-  clearBtn: true,  /*清除按鈕*/
-  buttonClass: 'btn text-primary',
-}); 
+if (elem) {
+  const datepicker = new Datepicker(elem, {
+    nextArrow: '>',
+    prevArrow: '<',
+    clearBtn: true,  /*清除按鈕*/
+    buttonClass: 'btn text-primary',
+  });
+}
+
