@@ -108,6 +108,7 @@ $colors: (
   "gray-dark":  $gray-800,
   "$dark_2":    #707070,
   "$light_2":   #F5F0E7,
+  "$transparent": transparent,
 ) !default;
 // scss-docs-end colors-map
 
@@ -121,23 +122,25 @@ $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
-$dark_2:      #707070 !default;
-$light_2:     #F5F0E7 !default;
+$dark_2:      #707070 !default;          //new
+$light_2:     #F5F0E7 !default;          //new 
+$transparent:    transparent !default;  //new 
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
 /*------更新、新增顏色存放區-----*/
 $theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary,
+  "primary":    $primary,         //change
+  "secondary":  $secondary,       //change
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
   "dark":       $dark,
-  "dark_2":     #707070,
-  "light_2":    #F5F0E7,
+  "dark_2":     #707070,            //new
+  "light_2":    #F5F0E7,            //new
+  "transparent":  $transparent,     //new
 ) !default;
 // scss-docs-end theme-colors-map
 
